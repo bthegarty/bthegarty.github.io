@@ -1,0 +1,93 @@
+<!--Brendan Hegarty-->
+<!doctype html>
+<html>
+<head>
+	<title>Compiler</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="style.css"></link>
+	<link rel='shortcut icon' href='me.png'>
+	<!-- <link href="bootstrap.css" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Lobster" rel="stylesheet">
+	<script src="js/lexer.js",></script>
+	<script src="js/parser.js"></script>
+	<script src="js/ast.js"></script>
+	<script src="js/codeGen.js"></script>
+	<script src="js/tests.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class='navbar'>
+			<li class="flexin">Heg Compiler</li>
+			<div class="success">
+				<button id="success" type = "button" onclick="testCaseOne();">Success 1 <i class="fas fa-check"></i></button>
+				<button id="success" type = "button" onclick="testCaseTwo();">Success 2 <i class="fas fa-check"></i></button>
+			</div>
+			<div class="fail">
+				<button id="fail" type = "button" onclick="testCaseThree();">Failure 1 <i class="fas fa-times"></i></button>
+				<button id="fail" type = "button" onclick="testCaseFour();">Failure 2 <i class="fas fa-times"></i></button>
+			</div>
+	</div>
+	<div class="space">
+	</div>
+	<button class="btn-default" type = "button" onclick="lexer();">Compile <i class="fas fa-terminal" aria-hidden="true"></i></button>
+	<form>
+		<div class="container">
+			<textarea class="input" id="inputText" placeholder="Enter code"></textarea>
+		</div>
+		<div class="container output">
+			<textarea readonly class="lex" id="outputText" placeholder="Here comes the code, do in do do"></textarea>
+			<textarea readonly class="sao" id="outputCode" placeholder="Semantically Analyzed Output"></textarea>
+			<textarea readonly class="code" id="outputGen" placeholder="Code Gen Here"></textarea>
+			<div class="trees output">
+				<textarea readonly class="tabcontent cst" id="outputParse" placeholder="CST goes here"></textarea>
+				<div class="white-space"></div>
+				<textarea readyonly class="tabcontent ast" id="outputAST" placeholder="AST goes here"></textarea>
+				<!-- make these tabs -->
+			</div>
+		</div>
+	</form>
+
+	<div class="container">
+
+			<!-- Trigger the modal with a button -->
+			<!-- <button type="button" class="btn-default" data-toggle="modal" data-target="#myModal">Learn the Language</button> -->
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+									<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Compiler Grammar</h4>
+									</div>
+									<div class="modal-body">
+
+											<embed src="compiler_Grammar.pdf"
+														 frameborder="0" width="100%" height="400px">
+
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+
+							</div>
+					</div>
+			</div>
+	</div>
+	<div class="footer">
+	<div class="center"><p>Brendan Hegarty - Marist College 2017 - Last Updated 12/07/2017</p>
+	</div>
+	<!-- Social links here -->
+	<div id="right" class="right">
+			<a target="_blank" href="https://github.com/bthegarty"><i id="social-gt" class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/brendan-hegarty-a91186104/"><i id="social-in" class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.facebook.com/brendan.hegarty.14"><i id="social-fa" class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.instagram.com/b_hegs1/?hl=en"><i id="social-ig" class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+			<a target="_blank" href="http://www.bthegarty.com"><i id="social-me" class="far fa-lemon fa-2x" aria-hidden="true"></i></a>
+	</div>
+</div>
+</body>
+</html>

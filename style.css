@@ -1,0 +1,229 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #1c2237;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  background-image: url("./ignasi_pattern_s.png");
+}
+
+/* //- colors for 2.0 - 2.0
+$grey: #403f45;
+$light-grey: #eaeaea;
+$bronze: #ad974f;
+$dark-bronze: #8e793e;
+
+//- some blues
+
+$navy: #1c2237;
+$deep-blue: #2d3759;
+$blue: #3e4c7b;
+$light-blue: #50619c; */
+
+
+/********************/
+
+.navbar{
+  padding: 1em;
+  background-color: #1c2237;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 999;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  align-items: baseline;
+}
+
+.flexin{
+  font-family: 'Lobster', sans-serif;
+  margin-right: auto;
+  font-size: 22px;
+  color: #ad974f;
+}
+
+/************************/
+
+.container{
+  padding: 2em;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 40px;
+  color: #eaeaea;
+  background-color: #1c2237 !important;
+}
+  button:hover{
+    background-color: #1c2237;
+    color: #ad974f;
+    cursor: pointer;
+  }
+
+  button:focus {outline:0;}
+
+.btn-lg{
+  font-size: 14px !important;
+}
+
+.space{
+  height: 100px;
+  width: 100%;
+}
+
+form{
+  justify-content: center;
+  display: flex;
+}
+
+textarea{
+  border-radius: 5px;
+  resize: none;
+  height: 300px !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+textarea:focus {outline:0;}
+
+.lex{
+  width: 300px;
+}
+
+.cst{
+  width: 400px;
+}
+
+.ast{
+  width: 350px;
+}
+
+.code{
+  width: 250px;
+  text-align: center;
+}
+
+.tabs{
+  overflow: hidden;
+  display: inline;
+}
+
+.input{
+  height: 500px !important;
+  width: 250px;
+}
+
+.output textarea{
+  background: #eaeaea;
+}
+
+.trees{
+  display: flex;
+}
+
+.white-space{
+  width: 10px;
+}
+
+.btn-default{
+  border: 2px solid #1c2237;
+  color: #1c2237;
+  background-color: transparent !important;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+}
+
+.btn-default:hover{
+  background-color: #1c2237 !important;
+  transition: 0.5s;
+  border: 2px solid #ad974f;
+}
+
+.modal-content{
+  display: none;
+}
+
+.fail{
+  padding-right: 15px;
+}
+
+/*bottom bits*/
+.footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #1c2237;
+}
+
+#right{
+  box-sizing: border-box;
+  padding-right:10px;
+  text-align: center;
+}
+
+#social-gt{
+  color: #1c2237;
+}
+#social-gt:hover{
+  color: red;
+  transition: color 0.3s linear;
+}
+
+#social-in{
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #1c2237;
+}
+#social-in:hover{
+  color: #4099FF;
+  transition: color 0.3s linear;
+}
+
+#social-fa{
+  padding-right: 12px;
+  color: #1c2237;
+}
+#social-fa:hover{
+  color: #3B5998;
+  transition: color 0.3s linear;
+}
+
+#social-ig{
+  padding-right: 12px;
+  color: #1c2237;
+}
+#social-ig:hover{
+  color: #e600ac;
+  transition: color 0.3s linear;
+}
+
+#social-me{
+  color: #1c2237;
+}
+#social-me:hover{
+  color: #ad974f;
+  transition: color 0.3s linear;
+}
+
+/* mobile bits */
+@media only screen and (min-width: 320px) and (max-width: 1020px) {
+  textarea{
+    display: block;
+    width: 100% !important;
+  }
+  .space{
+    padding-top: 3em;
+  }
+  form{
+    display: block;
+  }
+}
