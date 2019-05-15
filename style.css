@@ -1,31 +1,22 @@
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #1c2237;
+  background-color: #161f22;
   text-align: center;
   padding: 0px;
   margin: 0;
-  background-image: url("./ignasi_pattern_s.png");
 }
 
 /* //- colors for 2.0 - 2.0
-$grey: #403f45;
-$light-grey: #eaeaea;
-$bronze: #ad974f;
-$dark-bronze: #8e793e;
+$grey: #161f22l;
+$red: #c80000;
 
-//- some blues
-
-$navy: #1c2237;
-$deep-blue: #2d3759;
-$blue: #3e4c7b;
-$light-blue: #50619c; */
 
 
 /********************/
 
 .navbar{
   padding: 1em;
-  background-color: #1c2237;
+  background-color: #0a0e0f;
   list-style: none;
   margin: 0;
   overflow: hidden;
@@ -48,7 +39,7 @@ $light-blue: #50619c; */
   font-family: 'Lobster', sans-serif;
   margin-right: auto;
   font-size: 22px;
-  color: #ad974f;
+  color: #c80000;;
 }
 
 /************************/
@@ -63,11 +54,10 @@ button{
   border: none;
   border-radius: 40px;
   color: #eaeaea;
-  background-color: #1c2237 !important;
+  background-color: #0a0e0f !important;
 }
   button:hover{
-    background-color: #1c2237;
-    color: #ad974f;
+    color: #c80000;
     cursor: pointer;
   }
 
@@ -137,16 +127,15 @@ textarea:focus {outline:0;}
 }
 
 .btn-default{
-  border: 2px solid #1c2237;
-  color: #1c2237;
+  border: 2px solid #fff;
+  color: #fff;
   background-color: transparent !important;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
 }
 
 .btn-default:hover{
-  background-color: #1c2237 !important;
   transition: 0.5s;
-  border: 2px solid #ad974f;
+  border: 2px solid #c80000;
 }
 
 .modal-content{
@@ -161,7 +150,7 @@ textarea:focus {outline:0;}
 .footer{
   padding-top: 25px;
   padding-bottom: 25px;
-  color: #1c2237;
+  color: #fff;
 }
 
 #right{
@@ -171,46 +160,46 @@ textarea:focus {outline:0;}
 }
 
 #social-gt{
-  color: #1c2237;
+  color: #fff;
 }
 #social-gt:hover{
-  color: red;
+  color: #c80000;
   transition: color 0.3s linear;
 }
 
 #social-in{
   padding-left: 12px;
   padding-right: 12px;
-  color: #1c2237;
+  color: #fff;
 }
 #social-in:hover{
-  color: #4099FF;
+  color: #c80000;
   transition: color 0.3s linear;
 }
 
 #social-fa{
   padding-right: 12px;
-  color: #1c2237;
+  color: #fff;
 }
 #social-fa:hover{
-  color: #3B5998;
+  color: #c80000;
   transition: color 0.3s linear;
 }
 
 #social-ig{
   padding-right: 12px;
-  color: #1c2237;
+  color: #fff;
 }
 #social-ig:hover{
-  color: #e600ac;
+  color: #c80000;
   transition: color 0.3s linear;
 }
 
 #social-me{
-  color: #1c2237;
+  color: #fff;
 }
 #social-me:hover{
-  color: #ad974f;
+  color: #c80000;
   transition: color 0.3s linear;
 }
 
