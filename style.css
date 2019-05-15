@@ -25,21 +25,16 @@ $red: #c80000;
   width: 100%;
   transition: 0.5s;
   z-index: 999;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-
-  align-items: baseline;
+  align-items: center;
 }
 
 .flexin{
-  font-family: 'Lobster', sans-serif;
+  height: 30px;
+  width: 30px;
   margin-right: auto;
-  font-size: 22px;
-  color: #c80000;;
+  background-image: url("bh-red-grey.png");
+  background-size: contain;
 }
 
 /************************/
@@ -154,9 +149,10 @@ textarea:focus {outline:0;}
 }
 
 #right{
+  display: flex;
   box-sizing: border-box;
   padding-right:10px;
-  text-align: center;
+  justify-content: center;
 }
 
 #social-gt{
@@ -195,12 +191,15 @@ textarea:focus {outline:0;}
   transition: color 0.3s linear;
 }
 
-#social-me{
-  color: #fff;
+.social-me{
+  height: 32px;
+	width: 32px;
+	background-image: url("bh-white-grey.png");
+	background-size: contain;
 }
-#social-me:hover{
-  color: #c80000;
-  transition: color 0.3s linear;
+.social-me:hover{
+  background-image: url("bh-red-grey.png");
+  transition: .4s ease-in-out;
 }
 
 /* mobile bits */
